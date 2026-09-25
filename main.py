@@ -127,7 +127,7 @@ def run():
                 total_items = int(match.group(1)) if match else 0
                 if total_items == 0: continue
 
-                if total_items > 20:
+                if total_items > 9999:
                     page_num = math.ceil(total_items / 20)
                     print(f"-> {total_items}件 / 最終ページ({page_num}P)へ移動")
                     current_url = page.url
